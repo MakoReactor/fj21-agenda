@@ -11,7 +11,8 @@
 		<welcome-file>default.html</welcome-file>
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
-
+		
+		
 		<servlet>
 			<servlet-name>servletOiMundo</servlet-name>
 			<servlet-class>
@@ -21,8 +22,10 @@
 
 		<servlet-mapping>
 			<servlet-name>servletOiMundo</servlet-name>
-			<url-pattern>/oi</url-pattern>
+			<url-pattern>/oi/*</url-pattern>
 		</servlet-mapping>
+
+		
 
 
 	</welcome-file-list>
