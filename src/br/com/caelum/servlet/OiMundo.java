@@ -16,7 +16,7 @@ public class OiMundo extends HttpServlet {
 		// escreve o texto
 		out.println("<html>");
 		out.println("<body>");
-		out.println("Primeira servlet");
+		out.println("Primeira servlet!");
 		out.println("</body>");
 		out.println("</html>");
 	}
