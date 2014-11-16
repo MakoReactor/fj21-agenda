@@ -13,7 +13,7 @@ public class TestaInsere {
 		contato.setEmail("testeo@email.com.br");
 		contato.setEndereco("teste");
 		contato.setDataNascimento(Calendar.getInstance());
-
+		
 		// grave nessa conexão
 		ContatoDao dao = new ContatoDao();
 
