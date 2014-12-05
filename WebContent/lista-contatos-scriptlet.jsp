@@ -3,6 +3,7 @@
 
 <%@ page
 	import="java.util.*, 
+	java.text.SimpleDateFormat,
 	br.com.caelum.agenda.dao.*, 
 	br.com.caelum.agenda.modelo.*"%>
 
@@ -21,6 +22,8 @@
 			<td>Data de Nascimento</td>
 		</tr>
 		<%
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
 			ContatoDao dao = new ContatoDao();
 			List<Contato> contatos = dao.getLista();
 			for (Contato contato : contatos) {
@@ -29,7 +32,7 @@
 			<td><%=contato.getNome()%></td>
 			<td><%=contato.getEmail()%></td>
 			<td><%=contato.getEndereco()%></td>
-			<td><%=contato.getDataNascimento().getTime()%></td>
+			<td><%=sdf.format(contato.getDataNascimento().getTime())%></td>
 
 
 		</tr>
